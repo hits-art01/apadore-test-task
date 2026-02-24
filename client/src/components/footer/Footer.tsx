@@ -1,4 +1,4 @@
-import React, { type FC } from "react";
+import { type FC } from "react";
 import "./footer.scss";
 import FooterTitle from "../footer-title/FooterTitle";
 import FooterMain from "../footer-main/FooterMain";

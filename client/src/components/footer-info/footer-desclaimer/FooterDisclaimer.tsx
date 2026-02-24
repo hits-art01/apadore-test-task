@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer-disclaimer.scss";
 import devlogo from "../../../assets/devlogo.svg";
 
