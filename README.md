@@ -193,7 +193,7 @@ npm install
 npm run dev
 ```
 
-Server běží na `http://localhost:5000`
+Server běží na Render deploy
 
 ### Frontend
 
@@ -203,6 +203,6 @@ npm install
 npm run dev
 ```
 
-Aplikace běží na `http://localhost:5173`
+Aplikace běží na Vercel deploy
 
 ---

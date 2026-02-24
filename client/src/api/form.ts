@@ -1,7 +1,7 @@
 import type { FormData } from "../utils/validateForm";
 
 export const sendContactForm = async (formData: FormData) => {
-  const response = await fetch("http://localhost:5000/api/contact", {
+  const response = await fetch("https://apadore-test-task.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
