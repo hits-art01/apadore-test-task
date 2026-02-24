@@ -1,0 +1,29 @@
+.footer-main {
+  display: flex;
+  position: relative;
+
+  margin-bottom: 160px;
+}
+
+.footer-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  right: -200px;
+  top: -10px;
+
+  z-index: -1;
+  opacity: 1;
+
+  background: url("../../assets/flowers.svg") no-repeat right / contain;
+}
+
+@media (max-width: 992px) {
+  .footer-main {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .footer-main::before {
+    display: none;
+  }
+}

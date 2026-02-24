@@ -1,0 +1,285 @@
+.footer-form {
+  flex: 0 1 45%;
+  margin-right: 150px;
+}
+
+.footer-form {
+  color: #fff;
+  border-radius: 12px;
+}
+
+.footer-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.footer-form__field {
+  margin-bottom: 28px;
+}
+
+.footer-form__label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-form__field input,
+.footer-form__field textarea {
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #808080;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+
+  &::placeholder {
+    color: #808080;
+  }
+}
+
+.footer-form__field input:hover,
+.footer-form__field textarea:hover {
+  background: #fff;
+}
+.footer-form__apartment-buttons {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  //   width: 343px;
+}
+
+.apartment-btn {
+  padding: 8px 24px;
+  background: none;
+  font-size: 12px;
+
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+}
+
+.footer-form__checkboxes {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-form__checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  inset: 0;
+  width: 12px;
+  height: 12px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  left: 3px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+.custom-checkbox input:checked ~ .checkmark {
+  background: #1e1e1e;
+  border-color: #bbbbbb;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.field_label {
+  display: flex;
+  justify-content: space-between;
+  span {
+    color: #ff6060;
+  }
+}
+
+.footer-form__field .error {
+  border: 1px solid #ff6060 !important;
+}
+
+.footer-form__error {
+  display: block;
+  color: #ff6060;
+}
+
+.submit_wrap {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1243px) {
+  .footer-form {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer-form__row {
+    gap: 20px;
+  }
+
+  .footer-form__field {
+    margin-bottom: 24px;
+  }
+
+  .footer-form__apartment-buttons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-form {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer-form__row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-form__apartment-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-form {
+    padding: 0 30px;
+  }
+
+  .footer-form__label {
+    font-size: 14px;
+  }
+
+  .footer-form__field input,
+  .footer-form__field textarea {
+    font-size: 15px;
+    padding: 11px 13px;
+  }
+
+  .apartment-btn {
+    padding: 7px 18px;
+    font-size: 12px;
+  }
+
+  .footer-form__checkbox-label {
+    font-size: 13px;
+  }
+  .footer-form__apartment-buttons {
+    gap: 8px;
+
+    padding: 2px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-form {
+    padding: 0 20px;
+  }
+
+  .footer-form__field {
+    margin-bottom: 20px;
+  }
+
+  .footer-form__field input,
+  .footer-form__field textarea {
+    max-width: 335px;
+  }
+
+  .footer-form__apartment-buttons {
+    max-width: 340px;
+
+    padding: 6px;
+  }
+
+  .footer-form__checkboxes {
+    margin: 24px 0;
+  }
+
+  .footer-form__checkbox-label {
+    font-size: 12.5px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-form {
+    padding: 0 15px;
+  }
+
+  .footer-form__field input,
+  .footer-form__field textarea {
+    font-size: 14.5px;
+    padding: 10px 12px;
+  }
+
+  .apartment-btn {
+    padding: 6px 14px;
+    min-width: 68px;
+  }
+
+  .footer-form__checkbox-label {
+    font-size: 12px;
+  }
+
+  .footer-form__error {
+    font-size: 12.5px;
+  }
+}
